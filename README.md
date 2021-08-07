@@ -1,4 +1,4 @@
-# Hugo DoIt template
+# Hugo Book template
 
 This repository is served as a tech blog template powered by [Hugo](https://gohugo.io/) and [book](https://hugo-book-demo.netlify.app/) theme.
 

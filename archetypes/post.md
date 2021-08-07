@@ -1,10 +1,13 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 weight: 0
+subtitle: ""
 date: {{ .Date }}
 draft: false
-# bookComments: false
-# bookSearchExclude: false
-# bookToc: false
-# bookHidden: true
+author: ""
+description: ""
+tags: []
+categories: []
 ---
+
+<!--more-->

@@ -43,7 +43,7 @@ enableGitInfo = true
 [menu]
 # [[menu.before]]
 [[menu.after]]
-  name = "Hugo book"
+  name = "Hugo book theme"
   url = "https://github.com/alex-shpak/hugo-book"
   weight = 10
 
@@ -84,12 +84,12 @@ enableGitInfo = true
   # Requires 'BookRepo' param.
   # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
   # Github uses 'commit', Bitbucket uses 'commits'
-  # BookCommitPath = 'commit'
+  BookCommitPath = 'commit'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  # BookEditPath = 'edit/main/exampleSite'
+  BookEditPath = 'edit/main/'
 
   # Configure the date format used on the pages
   # - In git information

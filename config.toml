@@ -1,4 +1,4 @@
-baseURL = 'https://ww-templates.github.io/hugo-book/'
+baseURL = 'https://sosiristseng.github.io/template-hugo-book/'
 title = 'Hugo Book'
 theme = 'book'
 

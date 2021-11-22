@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = 'https://sosiristseng.github.io/template-hugo-book/'
+baseURL = 'https://ww-templates.github.io/hugo-book/'
 title = 'Hugo Book'
 theme = 'book'
 

@@ -1,4 +1,4 @@
-baseURL = 'https://sosiristseng.github.io/template-hugo-book/'
+baseURL = 'https://sosiris-templates.github.io/hugo-book/'
 title = 'Hugo Book'
 theme = 'book'
 

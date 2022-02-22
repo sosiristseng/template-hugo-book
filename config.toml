@@ -1,4 +1,5 @@
-baseURL = 'https://sosiris-templates.github.io/hugo-book/'
+baseURL = "https://sosiristseng.github.io/template-hugo-book/"
+
 title = 'Hugo Book'
 theme = 'book'
 
@@ -10,45 +11,45 @@ defaultContentLanguage = "en"
 
 # Book configuration
 disablePathToLower = true
-enableGitInfo = true
+enableGitInfo      = true
 
 # Needed for mermaid/katex shortcodes
 [markup]
-[markup.goldmark.extensions]
+  [markup.goldmark.extensions]
     definitionList = true
-    footnote = true
-    linkify = true
-    strikethrough = true
-    table = true
-    taskList = true
-    typographer = true
-[markup.goldmark.renderer]
+    footnote       = true
+    linkify        = true
+    strikethrough  = true
+    table          = true
+    taskList       = true
+    typographer    = true
+  [markup.goldmark.renderer]
     unsafe = true
 
 [markup.tableOfContents]
-    startLevel = 1
+  startLevel = 1
 
 # Multi-lingual mode config
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 [languages]
-[languages.en]
-  languageName = 'English'
-  contentDir = 'content'
-  weight = 1
+  [languages.en]
+    languageName = 'English'
+    contentDir   = 'content'
+    weight       = 1
 
 [menu]
-# [[menu.before]]
-[[menu.after]]
-  name = "Hugo book theme"
-  url = "https://github.com/alex-shpak/hugo-book"
-  weight = 10
+  # [[menu.before]]
+  [[menu.after]]
+    name   = "Hugo book theme"
+    url    = "https://github.com/alex-shpak/hugo-book"
+    weight = 10
 
-[[menu.after]]
-  name = "GitHub"
-  url = "https://github.com/sosiristseng/template-hugo-book"
-  weight = 20
+  [[menu.after]]
+    name   = "GitHub"
+    url    = "https://github.com/sosiristseng/template-hugo-book"
+    weight = 20
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.

@@ -6,9 +6,6 @@ on:
   pull_request: 
     branches: [main]
 
-env:
-  HUGO_BASE_URL: "https://sosiristseng.github.io/template-hugo-book/"
-
 jobs:
   build:
     runs-on: ubuntu-latest

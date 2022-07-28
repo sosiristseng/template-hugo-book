@@ -7,7 +7,7 @@ This repository is served as a tech blog template powered by [Hugo](https://gohu
 Click `Use this template` green button to copy this repository to your place.
 
 Open your repository settings => Pages => GitHub Pages
-=> Build and deployment => Source, Select GitHub actions
+=> Build and deployment => Source, Select `GitHub actions`
 
 ## For Gitlab
 

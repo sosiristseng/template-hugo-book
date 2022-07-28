@@ -4,7 +4,10 @@ This repository is served as a tech blog template powered by [Hugo](https://gohu
 
 ## On GitHub
 
-Click the `Use this template` green button to copy the repo to yours.
+Click `Use this template` green button to copy this repository to your place.
+
+Open your repository settings => Pages => GitHub Pages
+=> Build and deployment => Source, Select GitHub actions
 
 ## For Gitlab
 
@@ -12,4 +15,4 @@ New -> New project -> import project -> repo by URL.
 
 ## Notes
 
-You will need to edit the `baseurl` entry in `config.toml` for proper rendering in your site.
+You will need to edit the `baseurl` entry in `config.toml` for your site to work properly.

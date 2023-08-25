@@ -1,4 +1,4 @@
-# .kodiak.toml
+# https://kodiakhq.com/docs/recipes
 version      = 1
 merge.method = "squash"
 

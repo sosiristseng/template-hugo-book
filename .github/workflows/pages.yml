@@ -15,6 +15,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -31,11 +37,12 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Build
         run: hugo --gc --minify --baseURL ${{ steps.pages.outputs.base_url }}
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Upload page artifact
+        if: ${{ github.ref == 'refs/heads/main'}}
+        uses: actions/upload-pages-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # You need an SSH deploy key if deploying to another repo
-          publish_dir: ./public
-          force_orphan: true
-          commit_message: ${{ github.event.head_commit.message }}
+          path: ./public
+      - name: Deploy to GitHub Pages
+        if: ${{ github.ref == 'refs/heads/main'}}
+        id: deployment
+        uses: actions/deploy-pages@v3
